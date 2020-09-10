@@ -1,0 +1,244 @@
+*{
+    left: auto;
+    padding: auto;
+    font-family: sans-serif;
+    
+}
+
+.contenedor_padre{
+    width: 255px;
+    height: 420px;
+    background-color: darkcyan;
+    display: grid;
+    border: 2px solid red;
+    grid-template-rows: repeat(16,26.25px);
+    grid-template-columns: repeat(16,15.9px);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 90px;
+    border-radius: 10px 10px 60px;
+    box-shadow: 0px 2px 68px 10px #0045ff;
+}
+
+/*=========PANTALLA========*/
+.conten_pantalla{
+    width: 230px;
+    height: 200px;
+    position: relative;
+    border: 2px solid blue;
+    top: -10px;
+    left: -8px;
+    background-color: chocolate;
+    border-radius: 10px 10px 40px;
+    align-items: center;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-column:2/13;
+    grid-row: 2/9;
+    grid-template-rows: repeat(12,15px);
+    grid-template-columns: repeat(12,17.6px);
+}
+
+.glass{
+    width: 160px;
+    height: 144px;
+/*    position: relative;*/
+    background-color: white;
+    border-radius: 3px;
+    top: 35px;
+    left: 50px;
+    grid-column: 3/5;
+    grid-row: 5/9;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.led{
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    border-radius: 50%;
+    grid-row: 1/9;
+}
+
+img{
+    top: -4px;
+    position: relative;
+/*
+    margin-top: auto;
+    margin-bottom: auto;
+*/
+/*    margin-left: 60px;*/
+/*    align-items: center;*/
+    width: 100px;
+    height: 100px;
+    grid-column: 4/9;
+    grid-row: 10/19
+}
+
+.logo{
+    position: relative;
+    top: -17px;
+    grid-column: 6/9;
+    grid-row: 9/13;
+}
+
+/*=========CRUCETA========*/
+.conten_2{
+    width: 70px;
+    height: 70px;
+    display: grid;
+    grid-template-columns: 25px 20px 25px;
+    grid-template-rows: 25px 20px 25px;
+    grid-row: 10/13;
+    grid-column: 2/4;
+}
+
+.item:first-child{
+    width: 20px;
+    height: 25px;
+    border-radius: 4px 4px 0 0;
+    background: black;
+    grid-column: 2/3;
+}
+.item:nth-child(2){
+    width: 20px;
+    height: 25px;
+    border-radius: 0 0 4px 4px;
+    background: black;
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+.item:nth-child(3){
+    width: 25px;
+    height: 25px;
+    position: relative;
+    left: -4px;
+    top:-4px;
+    border: 1px solid gray;
+    border-radius: 100%;
+    background: black;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    align-content: stretch;
+    align-self: auto;
+    align-items: flex-start;
+}
+.item:nth-child(4){
+    width: 25px;
+    height: 20px;
+    background: black;
+    grid-column: 3/4;
+    grid-row: 2/3;
+    border-radius: 0 4px 4px 0;
+}
+.item:nth-child(5){
+    width: 25px;
+    height: 20px;
+    background: black;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    border-radius: 4px 0 0 4px
+}
+
+/*=========BOTONES========*/
+.conten_3{
+    width: 70px;
+    height: 70px;
+/*    border: 1px solid;*/
+    display: grid;
+    grid-template-columns: 30px 30px;
+    grid-template-rows: 30px 30px;
+    grid-gap: 5px;
+    grid-row: 10/13;
+    grid-column: 11/13;
+}
+
+[class^=boton]{
+    width: 35px;
+    height: 35px;
+/*    border: 1px solid;*/
+    display: grid;
+    justify-content: center;
+    border-radius: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.boton:first-child{
+    background-color: rgba(0, 0, 139, 0.5);
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+.boton:nth-child(2){
+    background-color: yellow;
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+/*=========OPCIONES========*/
+.conten_4{
+    width: 90px;
+    height: 30px;
+    display: grid;
+    position: relative;
+    top: -15px;
+    left: -10px;
+/*
+    align-items: center;
+    justify-content: center;
+*/
+    grid-template-columns: 30px 30px;
+    grid-template-rows: 30px;
+    grid-column-gap: 32px;
+    grid-row: 14/16;
+    grid-column: 6/9;
+}
+
+.select,.start{
+   width: 30px;
+    height: 10px;
+    background-color: red;
+    border-radius: 50px;
+    margin: 0 20px 0 0;
+}
+
+.text_1{
+    position: relative;
+    top: 10px;
+    left: -3px;
+    font-size: .8rem;
+    text-align: center;
+}
+
+.text_2{
+    position: relative;
+    top: 10px;
+    left: 2px;
+    font-size: .8rem;
+    text-align: center;
+}
+
+/*=========PARLANTES========*/
+.conten_5{
+/*    border: 1px solid;*/
+    display: flex;
+    grid-template-columns: repeat(5, 20px);
+/*    grid-template-rows: 30px;*/
+    transform: rotate(-40deg);
+    grid-column: 12/18;
+    grid-row: 14/20;
+}
+
+[class^=speaker]{
+   width: 6px;
+    height: 50px;
+    background-color: rgb(96, 96, 96);
+    margin: 0 7px 0 0;
+    display: inline-grid;
+    position: relative;
+    transform: rotate(-20deg);
+    border-radius: 5px 5px 5px 5px;
+}
